@@ -78,6 +78,7 @@ Once the setup is complete, you can run the main script.
 python your_script_name.py
 ```
 
+<img width="1172" height="760" alt="image" src="https://github.com/user-attachments/assets/21be3b2c-09cb-4460-95da-c509a3d5d377" />
 
 
 
