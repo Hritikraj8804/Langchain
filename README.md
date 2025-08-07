@@ -77,7 +77,7 @@ Once the setup is complete, you can run the main script.
 ```bash
 python your_script_name.py
 ```
-![Uploading image.png…]()
+
 
 
 
@@ -92,5 +92,3 @@ The script will then print the model's response to the hardcoded question "what 
   - [Python](https://www.python.org/)
   - [LangChain](https://python.langchain.com/)
   - [LangChain Google Generative AI](https://python.langchain.com/docs/integrations/chat/google_generative_ai)
-
-\
