@@ -37,8 +37,8 @@ Follow these steps to set up the project on your local machine.
 
 **1. Clone the repository:**
 ```bash
-git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
-cd your-repository-name
+git clone https://github.com/Hritikraj8804/Langchain.git
+cd Langchain
 ```
 
 **2. Create and activate a Python virtual environment:**
