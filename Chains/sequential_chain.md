@@ -1,6 +1,4 @@
 
----
-
 ## **Step-by-step explanation**
 
 ### **1. Load your tools**
