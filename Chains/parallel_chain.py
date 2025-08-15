@@ -43,29 +43,21 @@ merge_chain = prompt3 | model1 | parser
 chain = parallel_chain | merge_chain
 
 text = """
-Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression and outliers detection.
+Korean, Chinese, and Japanese are three major East Asian languages with distinct characteristics and writing systems.
 
-The advantages of support vector machines are:
+Korean Language:
+Korean uses the Hangul writing system, which is phonetic and consists of 24 basic letters. It is the official language of South Korea and North Korea, spoken by approximately 77 million people worldwide. Korean grammar follows a Subject-Object-Verb (SOV) word order and has complex honorific systems that reflect social relationships.
 
-Effective in high dimensional spaces.
+Chinese Language:
+Chinese is the most spoken language in the world with over 1.3 billion speakers. It uses Chinese characters (hanzi) as its writing system, which are logographic. Mandarin Chinese is the official language of China and Taiwan. Chinese is a tonal language with four main tones in Mandarin, and grammar follows a Subject-Verb-Object (SVO) structure.
 
-Still effective in cases where number of dimensions is greater than the number of samples.
+Japanese Language:
+Japanese uses three writing systems: Hiragana, Katakana, and Kanji (borrowed Chinese characters). It is spoken by about 125 million people, primarily in Japan. Japanese grammar follows SOV word order and has complex levels of politeness and formality. The language has no grammatical gender or plural forms for most nouns.
 
-Uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.
-
-Versatile: different Kernel functions can be specified for the decision function. Common kernels are provided, but it is also possible to specify custom kernels.
-
-The disadvantages of support vector machines include:
-
-If the number of features is much greater than the number of samples, avoid over-fitting in choosing Kernel functions and regularization term is crucial.
-
-SVMs do not directly provide probability estimates, these are calculated using an expensive five-fold cross-validation (see Scores and probabilities, below).
-
-The support vector machines in scikit-learn support both dense (numpy.ndarray and convertible to that by numpy.asarray) and sparse (any scipy.sparse) sample vectors as input. However, to use an SVM to make predictions for sparse data, it must have been fit on such data. For optimal performance, use C-ordered numpy.ndarray (dense) or scipy.sparse.csr_matrix (sparse) with dtype=float64.
+Common features among these languages include the influence of Chinese characters in their writing systems and similar cultural concepts reflected in their vocabulary and expressions.
 """
 
 result = chain.invoke({'text':text})
 
 print(result)
 
-chain.get_graph().print_ascii()
